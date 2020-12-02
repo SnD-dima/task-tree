@@ -1,0 +1,62 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.search {
+    padding: 0;
+
+    .search-block {
+        padding: 0;
+
+        .list {
+            position:absolute;
+            padding: 10px 25px;
+            background-color: #fff;
+            left: 0;
+            top: 70px;
+            max-height: 600px;
+            overflow: hidden;
+            overflow-y: auto;
+
+            &__item {
+                padding: 0;
+
+                &-tree {
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: .3s linear all;
+
+                    &:hover {
+                        background-color: #eeeeee;
+                        border: 1px solid #9a9a9a;
+
+                    }
+
+                }
+                &-index {
+                    position: absolute;
+                    left: -15px;
+                    top: 3px;
+
+                }
+                .he-tree .tree-node {
+                    padding: 0 0 0 5px;
+                    margin-bottom: 2px;
+                    border: none;
+                }
+                &-title {
+
+                }
+            }
+        }
+    }
+
+}
+
